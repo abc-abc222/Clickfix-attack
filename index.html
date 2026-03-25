@@ -1,1 +1,28 @@
+<button id="copy" class="wiki-toggle" aria-label="コピー">
+  &gt;
+</button>
 
+<script>
+  document.getElementById('copy').onclick = async () => {
+    await navigator.clipboard.writeText('コピーしたい文字列');
+  };
+</script>
+
+<style>
+.wiki-toggle{
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #54595d;
+  font-size: 14px;
+  font-family: serif;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+.wiki-toggle:hover{
+  color: #202122;
+}
+</style>
